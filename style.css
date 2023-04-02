@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* General Styles & Resets */
+* {
+    box-sizing: border-box;
+}
+
+/* Layout & Appearance */
+.mainContainer {
+    text-align: center;
+}
+.wrapper{
+    margin-top:50px;
+    text-align: center;
+}
+.container{
+    height:1302px; /*1230+48*2*/
+    width:100%;
+    padding-top: 3rem;
+    margin-top:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+}
+/*Image*/
+img:nth-child(1){
+    max-width: 63%;
+    height: 63%;
+    padding-top:5px;
+}
+img:last-of-type{
+    outline: 1px solid grey;
+    border-radius:0.25rem;
+    margin-left:auto;
+}
+
+/*Typography */
+body { 
+    font-family: "Segoe UI", Roboto;
+    margin: 0 0 0 0;
+}
+
+/*https://getbootstrap.com/docs/4.0/examples/album/  - REFERENCE WEBPAGE*/
+nav{
+    height:56px;
+    width:100%;
+    background-color: #343a40;
+    color: #fff;
+    text-align: left;
+    margin: 0 auto; 
+    display: flex; /*activate flexbox property in parent container for text centering*/
+    justify-content: center; /*centers along main axis*/
+    align-items: center; /*centers along cross axis*/
+}
+.gridL{
+    height:56px;
+    width:1100px;
+    background-color: #343a40;
+    color: #fff;
+    text-align: left;
+    margin: 0 auto; 
+    display: flex; /*activate flexbox property in parent container for text centering*/
+    justify-content: center; /*centers along main axis*/
+    align-items: center; /*centers along cross axis*/
+
+}
+.intro{
+    height:208px;
+    width:1348px;
+    margin: 0 auto; 
+    display: flex; /*activate flexbox property in parent container for text centering*/
+    justify-content: center; /*centers along main axis*/
+    align-items: center; /*centers along cross axis*/
+    flex-direction: column;
+
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+h2{
+    margin-top:100px;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+}
+.explanation{
+    height:408px;
+    width:1348px;
+    margin: 0 auto; 
+    margin-top:-20px;
+    margin-bottom:50px;
+    height:90px;
+    width:610px;
+    color: #464b4f;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+}
+.button1{ 
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	padding: .5rem .8rem;
+	font-size: 1rem;
+    font-weight: 400;
+	color: white;
+	background-color: #007bff;
+    display: inline-block;
+}
+.button2{ 
+	border: 1px solid transparent;
+    border-radius: .25rem;
+	padding: .5rem .8rem;
+	font-size: 1rem;
+    font-weight: 400;
+	color: white;
+	background-color: grey;
+    display: inline-block;
+}
+
+.wrapper .container{ 
+    display:grid; /*activate grid property in parent container; child elements .thumbnail will be displayed in grid*/
+    grid-template-rows: 374px 374px 374px; /*225px+149px*/
+    grid-template-columns: 348px 348px 348px; /*Inspect --> img.card-img-top = 348px*225px*/
+    row-gap: 30px;
+    column-gap: 30px; /*Inspect --> padding-right: 15px; + padding-left: 15px; = 30px*/
+}
+.container .thumbnail{
+    display: flex; /*activate flexbox property in parent container*/
+    flex-direction: column; /*Flexbox property: displays child elements in column*/
+    height:374px;
+    width:350px;
+    border: 1px solid rgba(0,0,0,.125); /*adds border to each grid element*/
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05); /*adds shadow to each grid element*/
+    border-radius: 0.25rem; /*curves edges of each grid element*/
+}
+.container .thumbnail .thumb-pic{
+    display: flex; /*activate flexbox property in parent container for text centering*/
+    justify-content: center; /*centers along main axis*/
+    align-items: center; /*centers along cross axis*/
+    height:225px;
+    width:348px;
+    background-color: #55595c;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.container .thumbnail .thumb-body{
+    height:159px; /*total height: thumb-text: 72px + thumb-text margin: 16px + padding-top:20px + padding-bottom:20px + bottom-text:31px = 159px */
+    width:348px;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #fff;
+}
+.container .thumbnail .thumb-body .thumb-text{
+    height:72px;
+    width:308px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin-left:20px;
+    margin-bottom:16px;
+    margin-top: 0px;
+}
+.container .thumbnail .thumb-body .bottom-text{
+    height:31px;
+    width:308px;
+    color: #6c757d;
+    display: inline-flex; /*child elements are displayed next to each other*/ 
+    justify-content: flex-start;
+}
+
+.container .thumbnail .thumb-body .bottom-text .buttons{
+    height:31px;
+    width:88px; 
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    border-color: #6c757d;
+    font-size: .875rem;
+    display: inline-flex; /*btn1 & btn2 child elements are displayed next to each other*/ 
+}
+.container .thumbnail .thumb-body .bottom-text .buttons .btn1{ 
+    height:31px;
+    width:47.53px;
+    border-right: 1px solid transparent;
+    border-color: #6c757d;
+    padding: 0.25rem 0.5rem;
+}
+.container .thumbnail .thumb-body .bottom-text .buttons .btn2{
+    height:31px;
+    width:47.53px;
+    padding: 0.25rem 0.5rem;
+}
+.container .thumbnail .thumb-body .bottom-text .time{
+    height:31px;
+    width:47.53px;
+    font-size: 80%;
+    justify-content: flex-end;
+    margin-left:auto;
+}
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 152px;
+    color: #6c757d;
+    line-height: 0.25rem;
+}
+footer .footer1{
+    height: 26px;
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-flex;
+}
+footer .footer1 a{
+    margin-left:auto; /*a link to right*/
+}
+footer .footer2{
+    height: 26px;
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-flex;
+}
+

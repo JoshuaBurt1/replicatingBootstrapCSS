@@ -1,0 +1,78 @@
+/*Nav bar*/
+img:hover{
+    cursor: pointer;
+}
+.title:hover{
+    cursor: pointer;
+}
+img:last-of-type:hover{
+    outline: 1px solid white;
+    border-radius: 0.25rem;
+}
+
+/*button links*/
+.button1:hover{
+    background-color: #006fe5;
+    cursor: pointer;
+}
+.button1:active{    
+    background-color: #0058b6;
+    outline: 4px solid rgba(0, 136, 255, 0.5);
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.button2:hover{
+    background-color: #6f7478;
+    cursor: pointer;
+}
+.button2:active{
+    background-color: #4f5255;
+    outline: 4px solid rgba(112, 112, 112, 0.5);
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.btn1:hover{
+    background-color: #6c757d;
+    color:white;
+    cursor: pointer;
+}
+.btn1:active{
+    background-color: white;
+    color: #6c757d;
+    outline: 4px solid rgba(112, 112, 112, 0.5);
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.btn2:hover{
+    background-color: #6c757d;
+    color:white;
+    cursor: pointer;
+}
+.btn2:active{
+    background-color: white;
+    color: #6c757d;
+    outline: 4px solid rgba(112, 112, 112, 0.5);
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+/*footer links*/
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: #007bff;
+}
+
+a:visited {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #024d9e;
+}
+
+/*to do: active link stays active until next click; use button or check-box*/
+/*to do: drop-down nav-bar with info; Source: https://alvarotrigo.com/blog/hamburger-menu-css/*/
